@@ -1,6 +1,10 @@
 # Accubitmt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+## installation
+
+Material is used
+-ng add @angular/material (basic theme)
 
 ## Development server
 
