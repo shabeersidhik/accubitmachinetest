@@ -1,0 +1,73 @@
+@media(min-width:100px) and (max-width:500px){
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+    .button-section{
+        width: 40%;
+    }
+}
+@media(min-width:500px){
+    .image{
+        height: 400px;
+        width: 400px;
+    }
+    .button-section{
+        width: 18%;
+    }
+}
+.outer{
+    background-color: #e8ecf1;
+    margin-top: 3%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    .shadow{
+        font-size: 3rem;
+        font-weight: 500;
+        color: lightgray;
+        position: absolute;
+    }
+    .head{
+        position: absolute;
+        width: 50%;
+        font-size: 1rem;
+        
+        
+    }
+    .data{
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-between;
+      .right{
+          margin-top: 3%;
+      
+      }
+      .left{
+          width: 45%;
+          line-height: 2;
+          margin-top: 5%;
+          color: gray;
+          .button-section{
+              display: flex;
+              align-items: center;
+              border: 1px solid lightgray;
+            //   border-radius: 20px;
+            padding-left: 4%;
+            border-radius: 10px;
+             
+              background-color: lightgray;
+             cursor: pointer;
+              .more{
+                  background-color:lightgray;
+                  outline: gray;
+                  cursor: pointer;
+                  color: gray;
+                  border: none;
+                 
+              }
+          }
+      }
+    }
+}

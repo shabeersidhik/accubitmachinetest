@@ -1,0 +1,22 @@
+<div class="outer">
+
+    <form [formGroup]="loginForm">
+        <mat-form-field appearance="outline" >
+            <mat-label>User Name</mat-label>
+            <input matInput placeholder="User Name" (keyup.enter)="onSubmit()"formControlName="strUsername">
+        </mat-form-field>&nbsp;&nbsp;&nbsp;
+        <mat-form-field appearance="outline" >
+            <mat-label>Enter your password</mat-label>
+            <input (keyup.enter)="onSubmit()"matInput [type]="hide ? 'password' : 'text'" formControlName="strPassword">
+            <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+        </mat-form-field><br><br>
+        <div *ngIf="error">
+            <h3 class="error-msg">Invalid Credentials!!!</h3>
+        </div>
+        <div class="button-container">
+        <button class="submit-btn" mat-raised-button type="submit" [disabled]="!loginForm.valid" (click)="onSubmit()" fxFill>Submit</button>
+        </div>
+    </form>
+</div>

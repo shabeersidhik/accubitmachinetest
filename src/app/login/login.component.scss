@@ -1,0 +1,19 @@
+.outer{
+    display: flex;
+    justify-content: center;
+  margin-top: 10%;
+    .error-msg{
+        color: red;
+    }
+    .button-container{
+        text-align: center;
+    }
+    .submit-btn{
+        
+        color: white;
+        background-color: blue;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+}
